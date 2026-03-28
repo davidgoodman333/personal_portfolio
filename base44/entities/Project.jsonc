@@ -1,0 +1,57 @@
+{
+  "name": "Project",
+  "type": "object",
+  "properties": {
+    "title": {
+      "type": "string",
+      "description": "Project title"
+    },
+    "description": {
+      "type": "string",
+      "description": "Short description of the project"
+    },
+    "category": {
+      "type": "string",
+      "enum": [
+        "Web Development",
+        "IoT",
+        "Communication",
+        "Mobile Apps",
+        "Data Science",
+        "UI/UX Design"
+      ],
+      "description": "Project category"
+    },
+    "technologies": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Technologies used"
+    },
+    "image_url": {
+      "type": "string",
+      "description": "Project thumbnail image URL"
+    },
+    "images": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Additional project image URLs for gallery"
+    },
+    "link": {
+      "type": "string",
+      "description": "Project link or demo URL"
+    },
+    "featured": {
+      "type": "boolean",
+      "default": false,
+      "description": "Whether the project is featured"
+    }
+  },
+  "required": [
+    "title",
+    "category"
+  ]
+}
