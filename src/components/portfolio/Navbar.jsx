@@ -23,7 +23,7 @@ export default function Navbar() {
             <div className="absolute inset-0 bg-primary rounded-sm rotate-45 scale-75" />
             <div className="absolute inset-0 border-2 border-accent rounded-sm rotate-12 scale-90" />
           </div>
-          <span className="font-heading font-bold text-lg tracking-tight">Portfolio</span>
+          <span className="font-heading font-bold text-lg tracking-tight">David Matijevic Goodman</span>
         </button>
 
         <div className="hidden md:flex items-center gap-8">
