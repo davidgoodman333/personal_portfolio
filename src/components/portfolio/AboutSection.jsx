@@ -37,20 +37,20 @@ export default function AboutSection() {
               <span className="text-sm font-medium text-accent tracking-widest uppercase">About</span>
             </div>
             <h2 className="font-heading text-3xl md:text-4xl font-bold mb-6 leading-tight">
-              Passionate about building
+              Driven to connect
               <br />
-              <span className="text-secondary">what matters</span>
+              <span className="text-secondary">technology and people</span>
             </h2>
             <div className="space-y-4 text-muted-foreground leading-relaxed">
               <p>
-                I'm a multidisciplinary developer with a deep passion for creating seamless 
-                digital products. From architecting robust web platforms to engineering IoT 
-                solutions that bridge the physical and digital worlds.
+                I’m a second-year Applied Computer Science student with a background in programming
+                and a growing passion for the business side of IT. Through my studies, I’ve developed
+                technical skills that allow me to understand how digital solutions are built and improved.
               </p>
               <p>
-                With expertise spanning communication protocols, responsive interfaces, and 
-                data-driven applications, I bring ideas to life with clean code and 
-                thoughtful design. Every project is an opportunity to push boundaries.
+                At the same time, I’m becoming increasingly interested in communication, coordination,
+                and project management. I want to use my technical foundation as a bridge into roles
+                where I can connect people, ideas, and technology to deliver meaningful results.
               </p>
             </div>
 
