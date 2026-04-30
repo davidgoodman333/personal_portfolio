@@ -122,7 +122,7 @@ export default function AboutSection() {
                 </div>
 
                 <img
-                    src="/i8 denim job.jpg"
+                    src="/images/i8 denim job.jpg"
                     alt="Portrait or visual representing my Applied Computer Science journey"
                     onLoad={() => setImageLoaded(true)}
                     onError={() => setImageLoaded(false)}
