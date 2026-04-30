@@ -1,24 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import { motion } from "framer-motion";
-import {
-  Code2,
-  Cpu,
-  Radio,
-  ClipboardList,
-  Users,
-  Briefcase,
-} from "lucide-react";
-
-const skills = [
-  { icon: Code2, label: "Web Development", color: "#266843" },
-  { icon: Cpu, label: "IT Systems", color: "#abbc83" },
-  { icon: Radio, label: "Communication", color: "#dca563" },
-  { icon: ClipboardList, label: "Project Coordination", color: "#266843" },
-  { icon: Users, label: "Teamwork", color: "#abbc83" },
-  { icon: Briefcase, label: "Business & IT", color: "#dca563" },
-];
 
 export default function AboutSection() {
+  const [imageLoaded, setImageLoaded] = useState(false);
+
   return (
       <section id="about" className="relative py-24 md:py-32 overflow-hidden">
         {/* Decorative geometric corner */}
@@ -41,35 +26,75 @@ export default function AboutSection() {
             >
               <div className="flex items-center gap-3 mb-4">
                 <div className="w-3 h-3 rotate-45" style={{ backgroundColor: "#dca563" }} />
-                <span className="text-sm font-medium text-accent tracking-widest uppercase">About</span>
+                <span className="text-sm font-medium text-accent tracking-widest uppercase">
+                About me
+              </span>
               </div>
+
               <h2 className="font-heading text-3xl md:text-4xl font-bold mb-6 leading-tight">
-                Driven to connect
+                Connecting
                 <br />
                 <span className="text-secondary">technology and people</span>
               </h2>
+
               <div className="space-y-4 text-muted-foreground leading-relaxed">
                 <p>
-                  I’m a second-year Applied Computer Science student with a background in programming
-                  and a growing passion for the business side of IT. Through my studies, I’ve developed
-                  technical skills that allow me to understand how digital solutions are built and improved.
+                  Outside of school, I’m into photography and videography. I’ve done event photoshoots and
+                  worked on short films, which gave me a chance to learn how to combine hardware (cameras)
+                  with software (Adobe tools). Most importantly, it taught me how to work with real clients
+                  who simply want to look their best in the picture.
+
                 </p>
+
                 <p>
-                  At the same time, I’m becoming increasingly interested in communication, coordination,
-                  and project management. I want to use my technical foundation as a bridge into roles
-                  where I can connect people, ideas, and technology to deliver meaningful results.
+                  I also play the clarinet, love playing volleyball and was part of a theater group before moving to Belgium. I like
+                  travelling, and I’m a big phone-freak, I enjoy following new phones, comparing features,
+                  and seeing how mobile technology keeps changing.
                 </p>
+                </div>
+
+              {/* Moved here from under the picture */}
+              <div className="mt-8">
+                <div className="flex items-center gap-3 mb-4">
+                  <div className="w-2.5 h-2.5 rotate-45" style={{ backgroundColor: "#266843" }} />
+                  <span
+                      className="text-sm font-medium tracking-widest uppercase"
+                      style={{ color: "#266843" }}
+                  >
+                  Why Applied Computer Science
+                </span>
+                </div>
+
+                <div className="space-y-4 text-muted-foreground leading-relaxed">
+                  <p>
+                    My interest in Applied Computer Science started during high school, where I studied to become a
+                    Mechatronics Technician. That field combined both hardware and software, but I found myself
+                    especially drawn to the software side — the logic, problem-solving, and creativity behind making
+                    systems work.
+                  </p>
+
+                  <p>
+                    That experience motivated me to continue in this direction. Thomas More University didn't offer just
+                    Applied Computer Science, but Applied Computer Science - AI, which felt like an emerging and lasting
+                    topic that I want to pursue.
+                  </p>
+                </div>
+
+
               </div>
 
               {/* Stats */}
               <div className="grid grid-cols-3 gap-6 mt-10 pt-10 border-t border-border">
                 {[
                   { value: "2nd", label: "Year Student" },
-                  { value: "5+", label: "Academic Projects" },
-                  { value: "3", label: "Focus Areas" },
+                  { value: "4+", label: "Academic Projects" },
+                  { value: "3", label: "Programming languages" },
                 ].map((stat) => (
                     <div key={stat.label}>
-                      <div className="font-heading text-2xl md:text-3xl font-bold" style={{ color: "#266843" }}>
+                      <div
+                          className="font-heading text-2xl md:text-3xl font-bold"
+                          style={{ color: "#266843" }}
+                      >
                         {stat.value}
                       </div>
                       <div className="text-sm text-muted-foreground mt-1">{stat.label}</div>
@@ -78,40 +103,77 @@ export default function AboutSection() {
               </div>
             </motion.div>
 
-            {/* Right: Skills grid */}
+            {/* Right: Photo and future plans */}
             <motion.div
                 initial={{ opacity: 0, x: 30 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.6, delay: 0.2 }}
+                className="space-y-8"
             >
-              <div className="grid grid-cols-2 gap-4">
-                {skills.map((skill, i) => {
-                  const Icon = skill.icon;
-                  return (
-                      <motion.div
-                          key={skill.label}
-                          initial={{ opacity: 0, y: 20 }}
-                          whileInView={{ opacity: 1, y: 0 }}
-                          viewport={{ once: true }}
-                          transition={{ duration: 0.4, delay: 0.1 * i }}
-                          className="group relative p-5 rounded-xl border border-border bg-card hover:shadow-lg transition-all duration-300 cursor-default"
+              {/* Replace /about-photo.jpg with your own image path */}
+              <div className="group relative overflow-hidden rounded-2xl border border-border bg-card min-h-[560px] md:min-h-[620px] shadow-sm">
+                <div className="absolute inset-0 opacity-[0.05]">
+                  <svg viewBox="0 0 500 620" fill="none" className="w-full h-full">
+                    <rect x="36" y="36" width="428" height="548" stroke="#266843" strokeWidth="2" />
+                    <rect x="72" y="72" width="356" height="476" stroke="#abbc83" strokeWidth="2" />
+                    <circle cx="250" cy="310" r="120" stroke="#dca563" strokeWidth="2" />
+                  </svg>
+                </div>
+
+                <img
+                    src="/i8 denim job.jpg"
+                    alt="Portrait or visual representing my Applied Computer Science journey"
+                    onLoad={() => setImageLoaded(true)}
+                    onError={() => setImageLoaded(false)}
+                    className="absolute inset-0 w-full h-full object-cover scale-x-[-1]"
+                />
+
+                <div
+                    className="absolute top-5 right-5 w-10 h-10 rounded-sm rotate-45 opacity-20 group-hover:opacity-30 transition-opacity"
+                    style={{ backgroundColor: "#dca563" }}
+                />
+
+                {!imageLoaded && (
+                    <div className="relative z-10 h-full min-h-[560px] md:min-h-[620px] flex flex-col items-center justify-center text-center p-8">
+                      <div
+                          className="w-16 h-16 rounded-xl border border-border flex items-center justify-center mb-4"
+                          style={{ backgroundColor: "#26684318" }}
                       >
-                        {/* Geometric accent */}
                         <div
-                            className="absolute top-3 right-3 w-6 h-6 rounded-sm rotate-45 opacity-10 group-hover:opacity-25 transition-opacity"
-                            style={{ backgroundColor: skill.color }}
+                            className="w-7 h-7 rotate-45 rounded-sm"
+                            style={{ backgroundColor: "#266843" }}
                         />
-                        <div
-                            className="w-10 h-10 rounded-lg flex items-center justify-center mb-3"
-                            style={{ backgroundColor: skill.color + "18" }}
-                        >
-                          <Icon size={20} style={{ color: skill.color }} />
-                        </div>
-                        <span className="font-heading font-semibold text-sm">{skill.label}</span>
-                      </motion.div>
-                  );
-                })}
+                      </div>
+
+                      <p className="font-heading font-semibold text-lg">Image space</p>
+
+                    </div>
+                )}
+              </div>
+
+              {/* Future plans paragraph under the picture */}
+              <div>
+                <div className="flex items-center gap-3 mb-4">
+                  <div className="w-2.5 h-2.5 rotate-45" style={{ backgroundColor: "#dca563" }} />
+                  <span
+                      className="text-sm font-medium tracking-widest uppercase"
+                      style={{ color: "#dca563" }}
+                  >
+                  Future Plans
+                </span>
+                </div>
+
+                <div className="space-y-4 text-muted-foreground leading-relaxed">
+                  <p>
+                    After getting more hands-on experience with programming, I realized
+                    that I do not want to work only behind a screen. I also need human connection, teamwork, and
+                    communication in my work.
+                  </p>
+                  <p>In the future, I would like to grow into a role where I can connect
+                    clients with the team working on the technical solution. I feel like it would be a shame not to use the soft skills I have developed, such as presenting,
+                    leading, motivating, and bringing people together.</p>
+                </div>
               </div>
             </motion.div>
           </div>

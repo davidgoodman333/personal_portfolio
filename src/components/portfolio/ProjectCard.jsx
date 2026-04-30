@@ -10,6 +10,7 @@ const categoryAccent = {
   "Mobile Apps": "#abbc83",
   "Data Science": "#266843",
   "UI/UX Design": "#dca563",
+  "Game Development": "#abbc83",
 };
 
 export default function ProjectCard({ project, index, onClick }) {

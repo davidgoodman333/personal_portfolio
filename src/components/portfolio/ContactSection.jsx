@@ -36,7 +36,7 @@ export default function ContactSection() {
 
           <div className="flex items-center justify-center gap-4">
             <a
-              href="mailto:hello@example.com"
+              href="mailto:dadoklar@gmail.com"
               className="flex items-center gap-2 px-6 py-3 bg-primary text-primary-foreground rounded-lg font-heading font-semibold text-sm hover:opacity-90 transition-opacity"
             >
               <Mail size={16} />
@@ -46,9 +46,9 @@ export default function ContactSection() {
 
           <div className="flex items-center justify-center gap-6 mt-8">
             {[
-              { icon: Github, href: "#", label: "GitHub" },
-              { icon: Linkedin, href: "#", label: "LinkedIn" },
-              { icon: Mail, href: "mailto:hello@example.com", label: "Email" },
+              { icon: Github, href: "https://github.com/davidgoodman333", label: "GitHub" },
+              { icon: Linkedin, href: "https://linkedin.com/in/david-matijević-goodman-78364a330/", label: "LinkedIn" },
+              { icon: Mail, href: "mailto:dadoklar@gmail.com", label: "Email" },
             ].map(({ icon: Icon, href, label }) => (
               <a
                 key={label}

@@ -9,77 +9,99 @@ import { FloatingDiamond, FloatingCircle } from "./GeometricShapes";
 const projects = [
   {
     id: 1,
-    title: "Geo Craft Studio",
-    description:
-        "Personal portfolio website built with React, Vite, and Tailwind CSS. Designed as a clean one-page showcase for projects, CV, and contact details.",
-    category: "Web Development",
-    technologies: ["React", "Vite", "Tailwind CSS"],
-    image_url: "/images/geocraft.jpg",
-    images: ["/images/geocraft.jpg"],
-    link: "https://personal-portfolio-teal-two-10.vercel.app/",
+    title: "The Andersons Household Management App",
+    description: (
+        <>
+          A custom Figma design for an Au Pair household management app, created around the customer’s
+          specific needs. The concept focused on helping the household manage schedules, bills, dinners,
+          trips, availability, and shared responsibilities in one place.
+          <br />
+          <br />
+          I worked in a team of 6 and my work was spread across all pages but mainly on the managing of the bills. We continuously applied the SCRUM methodology and documented the
+          process in Jira.
+        </>
+    ),
+    category: "UI/UX Design",
+    technologies: ["Figma", "UI Design", "UX Design", "Prototyping", "SCRUM", "Jira"],
+    image_url: "/images/anderson_login.png",
+    images: ["/images/anderson_schedule.png","/images/anderson_invoice.png","/images/anderson_bill.png"],
+    link: "https://www.figma.com/design/fVzv50LziYKatELZCo6i7R/2025_LST1?node-id=0-1&t=ljBpo6KlEZIsekp0-1",
   },
   {
     id: 2,
-    title: "IoT Dashboard",
-    description:
-        "A concept interface for connected devices with a focus on clean data visualization and modern UI presentation.",
-    category: "IoT",
-    technologies: ["React", "JavaScript"],
-    image_url: "/images/iot-dashboard.jpg",
-    images: ["/images/iot-dashboard.jpg"],
-    link: "",
+    title: "Grow Kasterlee Gym Application",
+    description:(
+        <>
+          A web application for Grow Kasterlee Gym, built in a team after receiving
+          a data model and a prototype that the client was satisfied with.
+          We continued by developing the app in the TALL stack and kept track of the project through GitHub.
+          The project had 4 roles, a Guest-Member-Trainer-Admin, and every role got a different view of the application.
+          <br/>
+       <br/>
+          My work was mainly focused on the guest pages, login/registration, dashboard and customer support, although I also contributed across other parts of the project. I also took on the role of SCRUM Master, which I enjoyed, because it allowed me to keep track of the burndown charts, follow up on tasks, and help the team stay organized.
+        </>
+),
+    category: "Web Development",
+    technologies: ["TALL Stack", "Laravel", "Livewire", "Tailwind CSS", "Alpine.js", "GitHub", "SCRUM"],
+    image_url: "/images/growgym_guest.png",
+    images: [
+      "/images/growgym_register.png",
+      "/images/growgym_dashb.png",
+      "/images/growgym_support.png",
+    ],
+    link: "https://growgym.be/",
   },
-  {
-    id: 3,
-    title: "Messaging Platform UI",
-    description:
-        "A communication-focused interface concept exploring structured conversations, contact panels, and responsive layouts.",
-    category: "Communication",
-    technologies: ["React", "Tailwind CSS", "Figma"],
-    image_url: "/images/communication-ui.jpg",
-    images: ["/images/communication-ui.jpg"],
-    link: "",
-  },
-  {
-    id: 4,
-    title: "Mobile Fitness App",
-    description:
-        "A mobile-first app concept for workout tracking and progress monitoring with a simple and motivating UX.",
-    category: "Mobile Apps",
-    technologies: ["React", "Mobile UI", "Tailwind CSS"],
-    image_url: "/images/mobile-fitness.jpg",
-    images: ["/images/mobile-fitness.jpg"],
-    link: "",
-  },
-  {
-    id: 5,
-    title: "Data Visualization Dashboard",
-    description:
-        "A dashboard concept presenting analytics and insights through charts, KPIs, and interactive summaries.",
-    category: "Data Science",
-    technologies: ["React", "Charts", "JavaScript"],
-    image_url: "/images/data-dashboard.jpg",
-    images: ["/images/data-dashboard.jpg"],
-    link: "",
-  },
-  {
-    id: 6,
-    title: "Portfolio UX Redesign",
-    description:
-        "A UI/UX design exercise focused on typography, spacing, and interaction polish for a professional portfolio site.",
-    category: "UI/UX Design",
-    technologies: ["Figma", "UX Design", "Design Systems"],
-    image_url: "/images/portfolio-redesign.jpg",
-    images: ["/images/portfolio-redesign.jpg"],
-    link: "",
-  },
-];
+    {
+        id: 3,
+        title: "Pula Wind Orchestra web Application",
+        description: (
+            <>
+                A web development project I worked on individually for my home orchestra. The goal was to
+                digitalize the sheet music and improve the orchestra’s online visibility. The website includes
+                CRUD functionality in the frontend, allowing the admin to update the page information manually without the help of a developer.
+
+                <br />
+                <br />
+                The project had 3 roles, a Guest-Member-Admin and every role got a different access. In the screenshot above is what the Admin would see. The project was developed as a full-stack application,
+                GitHub.
+            </>
+        ),
+        category: "Web Development",
+        technologies: ["TALL Stack", "CRUD", "GitHub"],
+        image_url: "/images/puhacki_home.png",
+        images: ["/images/puhacki_event.png","/images/puhacki_collab.png","/images/puhacki_galler.png","/images/puhacki_sheet.png"],
+        link: "",
+    },
+    {
+        id: 4,
+        title: "Tinkera VR Physics Game",
+        description: (
+            <>
+                Tinkera was a VR game project made to help younger children feel more motivated to study.
+                Our team chose physics as the main topic and created a game where the player has to solve a
+                physics problem so that a train can arrive on time.
+                <br />
+                <br />
+                The project was built in Unity using C# and Meta glasses. I worked in a team of 4, and my main
+                responsibility was designing the playground/environment that the player sees while playing.
+                We used Unity Version Control, formerly Plastic SCM, to keep track of the project.
+            </>
+        ),
+        category: "Game Development",
+        technologies: ["Unity", "C#", "Meta Quest", "VR", "Unity Version Control"],
+        image_url: "/images/tinkera.JPG",
+        images: ["/images/tinkera_game.48.38.png","/images/tinkera_pres.15.08.png"],
+        link: "https://www.youtube.com/watch?v=j7l145ulY2c",
+    }
+
+]
 
 export default function ProjectsSection() {
   const [activeFilter, setActiveFilter] = useState("All");
   const [selectedProject, setSelectedProject] = useState(null);
 
   const isLoading = false;
+  const categories = ["All", ...new Set(projects.map((project) => project.category).filter(Boolean))];
 
   const filtered =
       activeFilter === "All"
@@ -117,12 +139,12 @@ export default function ProjectsSection() {
               </h2>
 
               <p className="text-muted-foreground max-w-md mx-auto">
-                A curated selection of projects spanning different domains and technologies.
+                A curated selection of individual and team projects.
               </p>
             </motion.div>
 
             <div className="mb-12">
-              <BubbleFilter active={activeFilter} onSelect={setActiveFilter} />
+              <BubbleFilter active={activeFilter} onSelect={setActiveFilter} categories={categories} />
             </div>
 
             {isLoading ? (

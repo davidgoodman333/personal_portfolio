@@ -72,30 +72,20 @@ export default function HeroSection() {
                     </div>
 
                     <h1 className="font-heading text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-bold leading-[0.95] tracking-tight mb-6">
-                        Bridging
-                        <br />
-                        <span className="relative inline-block">
-              Business
-              <motion.span
-                  className="absolute -bottom-2 left-0 h-3 bg-secondary/30 -z-10"
-                  initial={{ width: 0 }}
-                  animate={{ width: "100%" }}
-                  transition={{ duration: 0.8, delay: 1 }}
-              />
-            </span>
-                        <br />
-                        <span
-                            className="text-transparent bg-clip-text"
-                            style={{
-                                backgroundImage: "linear-gradient(135deg, #266843, #abbc83, #dca563)",
-                            }}
-                        >
-              &amp; Technology
+                        Welcome,
+                        <br /><span
+                        className="text-transparent bg-clip-text"
+                        style={{
+                            backgroundImage: "linear-gradient(135deg, #266843, #abbc83, #dca563)",
+                        }}
+                    >
+
+              I've been expecting you.
             </span>
                     </h1>
 
                     <p className="text-lg md:text-xl text-muted-foreground max-w-2xl leading-relaxed mb-10">
-                        I’m a second-year Applied Computer Science student with a technical foundation in
+                        Hi, I'm David, a second-year Applied Computer Science student with a technical foundation in
                         programming and a growing interest in the business side of IT. My goal is to use
                         that background as a bridge toward communication, coordination, and project
                         management.

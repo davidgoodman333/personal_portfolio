@@ -3,9 +3,21 @@ import { motion } from "framer-motion";
 import { Download, FileText, Briefcase, GraduationCap } from "lucide-react";
 
 const highlights = [
-  { icon: Briefcase, label: "5+ Years Experience", sub: "Across multiple domains" },
-  { icon: GraduationCap, label: "B.Sc. Computer Science", sub: "University of Technology" },
-  { icon: FileText, label: "30+ Projects Delivered", sub: "From startups to enterprise" },
+  {
+    icon: Briefcase,
+    label: "Team & Client Projects",
+    sub: "Experience working with real project needs",
+  },
+  {
+    icon: GraduationCap,
+    label: "Applied Computer Science - AI",
+    sub: "Thomas More University of Applied Sciences",
+  },
+  {
+    icon: FileText,
+    label: "4 Portfolio Projects",
+    sub: "Web, UI/UX, and VR/game development",
+  },
 ];
 
 export default function CVSection() {
@@ -61,11 +73,11 @@ export default function CVSection() {
                 <Download size={18} />
               </motion.div>
               Download CV
-              <span className="text-xs font-normal opacity-70">PDF · 2MB</span>
+              <span className="text-xs font-normal opacity-70">PDF · 208kB</span>
             </a>
 
             <p className="text-xs text-muted-foreground mt-3">
-              Last updated March 2026
+              Last updated April 2026
             </p>
           </motion.div>
 
